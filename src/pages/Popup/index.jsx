@@ -5,7 +5,7 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 
 const container = document.getElementById('app-container');
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
+const root = createRoot(container);
 root.render(
   <BrowserRouter>
     <Popup />
