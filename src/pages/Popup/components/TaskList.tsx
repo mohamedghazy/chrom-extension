@@ -4,7 +4,11 @@ import EmptyState from '../../../shared/components/EmptyState';
 function TaskList() {
   return (
     <div>
-      <EmptyState />
+      <EmptyState
+        title="No Tasks "
+        message="No tasks created yet"
+        actionName="create new task"
+      />
     </div>
   );
 }

@@ -16,16 +16,16 @@ const Inputs: React.FC<Partial<InputProps>> = ({
   type,
 }) => {
   return (
-    <div className="form-control w-full max-w-xs">
-      <label className="label">
-        <span className="label-text">{lable}</span>
-      </label>
+    <div className={`form-control   ${className}`}>
+      <div className="label">
+        <span className="label-text text-base">{lable}</span>
+      </div>
       <div className="relative mt-2 rounded-md shadow-sm">
         <input
           type={type}
           placeholder={placeholder}
           required={required}
-          className={`input input-bordered w-full max-w-xs ${className}`}
+          className={`input input-bordered w-full   placeholder:text-xs bg-white border-slate-800 border-2 `}
         />
         {icon && (
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
